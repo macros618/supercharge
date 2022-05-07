@@ -15,7 +15,7 @@ class Utils(object):
         driver_options.headless = False
         
         driver = webdriver.Firefox(options=driver_options, service=driver_service)
-        #driver.set_window_size(self.resolution_x, self.resolution_y)
+        driver.set_window_size(self.resolution_x, self.resolution_y)
 
         return driver      
 
