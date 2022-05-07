@@ -40,4 +40,4 @@ class ListTest():
         
         page = ListPage(driver)
         page.remove_product_by_name(self.data['products']['backpack']['name'])
-        assert page.get_cart_item_count() != 0
+        assert page.get_cart_item_count() == 0
